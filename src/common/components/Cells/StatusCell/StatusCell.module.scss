@@ -1,0 +1,12 @@
+.StatusCell {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  p{
+    margin: 0;
+    &:nth-child(2) {
+      color: #6E6893;
+    }
+  }
+}

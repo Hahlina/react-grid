@@ -1,0 +1,49 @@
+.Paper {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.TableWrapper {
+  thead {
+    background-color: #F4F2FF;
+
+    th {
+      color: #6E6893;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-top: 1px solid #d9d5ec;
+      border-bottom: 1px solid #d9d5ec;
+    }
+  }
+}
+
+.StatusCell, .PaymentStatusCell, .AmountCell {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  p{
+    margin: 0;
+    &:nth-child(2) {
+      color: #6E6893;
+    }
+  }
+}
+
+.PaymentStatusCell {
+  p:nth-child(2){
+    font-weight: 500;
+    color: #25213B;
+  }
+}
+
+.AmountCell {
+
+  p:nth-child(1) {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
