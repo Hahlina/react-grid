@@ -1,0 +1,22 @@
+@import 'src/common/styles/colors';
+
+.nameSell {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        margin: 0;
+
+        &:first-child {
+            font-weight: 500;
+            font-size: 14px;
+            color: $dark-purple;
+        }
+
+        &:nth-child(2) {
+            color: $purple-100;
+            font-weight: 400;
+        }
+    }
+}

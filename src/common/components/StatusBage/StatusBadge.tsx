@@ -1,13 +1,6 @@
-import { FC } from 'react';
-import styles from './StatusBadge.module.scss';
+import type { FC } from 'react';
 
-// const BADGE_VARIANT = {
-//     active: 'active',
-//     inactive: 'inactive',
-//     pain: 'paid',
-//     overdue: 'overdue',
-//     unpaid: 'unpaid'
-// };
+import styles from './StatusBadge.module.scss';
 
 interface IStatusBadgeProps {
     variant: 'active' | 'inactive' | 'paid' | 'overdue' | 'unpaid' | string;

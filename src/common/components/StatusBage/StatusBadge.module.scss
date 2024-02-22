@@ -1,59 +1,61 @@
-.wrapper {
-  text-transform: capitalize;
-  border-radius: 10px;
-  width: fit-content;
-  padding: 2px 5px 2px 16px;
-  background-color: #e6e6f2;
-  color: #4a4aff;
-  font-weight: 500;
-  font-size: 12px;
-  position: relative;
+@import 'src/common/styles/colors';
 
-  &:before {
-    content: "";
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #4a4aff;
-    position: absolute;
-    left: 5px;
-    top: 7px;
-  }
+.wrapper {
+    text-transform: capitalize;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 2px 5px 2px 16px;
+    background-color: $purple-600;
+    color: $blue;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: $blue;
+        position: absolute;
+        left: 5px;
+        top: 7px;
+    }
 }
 
 .inactive {
-  background-color: #F2F0F9;
-  color: #6E6893;
+    background-color: $purple-400;
+    color: $purple-100;
 
-  &:before {
-    background-color: #6E6893;
-  }
+    &:before {
+        background-color: $purple-100;
+    }
 }
 
 .paid {
-  background-color: #cdffcd;
-  color: #007F00;
+    background-color: $color-green-900;
+    color: $color-green;
 
-  &:before {
-    background-color: #007F00;
-  }
+    &:before {
+        background-color: $color-green;
+    }
 }
 
 .overdue {
-  background-color: #FFE0E0;
-  color: #D30000;
+    background-color: $color-red-900;
+    color: $color-red;
 
-  &:before {
-    background-color: #D30000;
-  }
+    &:before {
+        background-color: $color-red;
+    }
 }
 
 .unpaid {
-  background-color: #ffeccc;
-  color: #965e00;
+    background-color: $color-yellow-900;
+    color: $color-yellow;
 
-  &:before {
-    background-color: #965e00;
-  }
+    &:before {
+        background-color: $color-yellow;
+    }
 }

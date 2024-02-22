@@ -1,0 +1,15 @@
+@import 'src/common/styles/colors';
+
+.wrapper {
+    display: table-cell;
+    height: 100px;
+    color: $purple-100;
+    background-color: $purple-500;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.row {
+    width: 100%;
+}

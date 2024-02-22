@@ -1,0 +1,14 @@
+@import 'src/common/styles/colors';
+
+.statusCell {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    p {
+        margin: 0;
+        &:nth-child(2) {
+            color: $purple-100;
+        }
+    }
+}

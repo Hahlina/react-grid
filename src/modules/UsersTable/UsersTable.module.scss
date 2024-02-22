@@ -1,0 +1,32 @@
+@import 'src/common/styles/colors';
+
+.paper {
+    box-shadow: 0 0 5px 0 $color-black-100;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tableWrapper {
+    thead {
+        background-color: $purple-500;
+        th {
+            color: $purple-100;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-bottom: 1px solid $purple-700;
+        }
+    }
+
+    tbody {
+        tr {
+            border-top: 1px solid $purple-700;
+            border-bottom: 1px solid $purple-700;
+        }
+    }
+
+    td {
+        border-top: 1px solid $purple-700;
+        border-bottom: 1px solid $purple-700;
+    }
+}

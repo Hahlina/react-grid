@@ -1,0 +1,36 @@
+@import 'src/common/styles/colors';
+
+.searchInputWrapper {
+    width: 392px;
+    height: 40px;
+    background-color: $purple-500;
+    border-radius: 6px;
+    position: relative;
+    box-sizing: border-box;
+
+    .input {
+        background-color: inherit;
+        width: calc(100% - 40px);
+        height: 100%;
+        border: 1px solid transparent;
+        outline: none;
+        border-radius: 6px;
+        padding-left: 40px;
+        color: $purple-100;
+
+        &:focus-within,
+        &:focus-visible {
+            border: 1px solid $purple-100;
+            outline: none;
+        }
+        &::placeholder {
+            color: $purple-100;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: calc(50% - 10px);
+        left: 10px;
+    }
+}
