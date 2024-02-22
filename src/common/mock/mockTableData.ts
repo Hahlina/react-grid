@@ -1,5 +1,11 @@
 import { Column } from '@devexpress/dx-react-grid';
 
+interface IUserDetailActivity {
+    date: string;
+    user_activity: string;
+    detail_activity: string;
+}
+
 interface IUserData {
     id: number;
     name: string;
@@ -10,6 +16,7 @@ interface IUserData {
     payment_date: string | null;
     amount: number;
     currency: string;
+    detail?: IUserDetailActivity[];
 }
 
 export const userData: IUserData[] = [
@@ -22,7 +29,27 @@ export const userData: IUserData[] = [
         payment_status: 'paid',
         payment_date: '2024-01-25',
         amount: 100,
-        currency: 'USD'
+        currency: 'USD',
+        detail: [
+            {
+                date: '2024-02-05',
+                user_activity: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies',
+                detail_activity:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.'
+            },
+            {
+                date: '2024-02-05',
+                user_activity: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies',
+                detail_activity:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.'
+            },
+            {
+                date: '2024-02-05',
+                user_activity: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies',
+                detail_activity:
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus, sed purus eu semper morbi id nunc, adipiscing vitae. Ultricies suspendisse vestibulum.'
+            }
+        ]
     },
     {
         id: 2,
@@ -122,6 +149,24 @@ export const userData: IUserData[] = [
         payment_date: '2023-01-31',
         amount: 220,
         currency: 'USD'
+    }
+];
+
+export const detailColumns: Column[] = [
+    {
+        name: 'date',
+        title: 'DATE',
+        getCellValue: (row: IUserDetailActivity) => row.date
+    },
+    {
+        name: 'user_activity',
+        title: 'USER ACTIVITY',
+        getCellValue: (row: IUserDetailActivity) => row.user_activity
+    },
+    {
+        name: 'detail_activity',
+        title: 'DETAIL',
+        getCellValue: (row: IUserDetailActivity) => row.detail_activity
     }
 ];
 

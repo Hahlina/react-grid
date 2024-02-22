@@ -1,5 +1,5 @@
 import './App.css';
-import { MyTable } from 'src/common/components/Table.tsx';
+import { MyTable } from 'src/common/components/Table/Table.tsx';
 
 function App() {
     return (

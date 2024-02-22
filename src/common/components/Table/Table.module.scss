@@ -7,15 +7,25 @@
 .TableWrapper {
   thead {
     background-color: #F4F2FF;
-
     th {
       color: #6E6893;
       font-size: 12px;
       font-weight: 600;
       text-transform: uppercase;
-      border-top: 1px solid #d9d5ec;
       border-bottom: 1px solid #d9d5ec;
     }
+  }
+
+  tbody {
+  tr {
+    border-top: 1px solid #d9d5ec;
+    border-bottom: 1px solid #d9d5ec;
+  }
+  }
+
+  td {
+    border-top: 1px solid #d9d5ec;
+    border-bottom: 1px solid #d9d5ec;
   }
 }
 
@@ -40,7 +50,6 @@
 }
 
 .AmountCell {
-
   p:nth-child(1) {
     font-weight: 500;
     font-size: 14px;
